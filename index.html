@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Rapha × MAAP 黑五比价</title>
 <style>
@@ -36,8 +36,37 @@
 .basket-panel dl{margin:6px 0}.basket-panel dl div{display:flex;justify-content:space-between;gap:6px 12px;padding:3px 0;flex-wrap:wrap}.basket-panel dt{font-size:.86rem}.basket-panel dd{margin:0;color:var(--accent);font-weight:690;overflow-wrap:anywhere}.basket-panel small{font-size:.77rem;color:var(--muted);font-weight:420}
 .pick{display:flex;align-items:center;gap:7px;color:var(--accent);font-size:.87rem;font-weight:650;cursor:pointer;margin:7px 0 0}.pick input{accent-color:var(--accent);width:17px;height:17px;margin:0;flex:none}.pick[hidden]{display:none}
 .price-line{display:block}.price-label,.price-original{font-size:.79rem;color:var(--muted)}.price-label{margin-right:5px}.price-original{display:block;margin-top:1px}
+.kit-label{display:none}.kit-comparison tbody th{background:none;white-space:normal}.kit-comparison tbody th small{display:block;color:var(--muted);font-weight:400}
 @media(max-width:740px){.item{grid-template-columns:78px minmax(0,1fr)}.preview-inner{display:flex;flex-direction:column;gap:10px;padding:11px}.preview-visual,.preview-details{width:100%}.preview-visual img{height:min(47dvh,540px)}.preview-details{display:contents}.preview-close{order:-1;margin-bottom:0}.preview h2{margin:0}.preview .links{margin-top:0}.color-list{width:100%}}
-@media(max-width:600px){.basket-people,.basket-brands{grid-template-columns:1fr}}
+@media(max-width:640px){
+  main{padding:20px max(12px,env(safe-area-inset-right)) calc(76px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left))}
+  header{gap:8px}header .sub{font-size:.9rem}section.block{margin-top:17px;padding:12px;border-radius:11px}
+  .jump{position:fixed;z-index:5;inset:auto 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;padding:5px max(8px,env(safe-area-inset-right)) calc(5px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left));background:#fff;border-top:1px solid var(--border);box-shadow:0 -3px 15px #1c252113}
+  .jump a{display:grid;place-items:center;min-height:44px;text-align:center;text-decoration:none;border-radius:6px;font-size:.81rem;font-weight:650}
+  .jump a[href="#shopping"]{background:var(--pale)}
+  .kit-comparison,.kit-comparison tbody{display:block;width:100%}
+  .kit-comparison thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .kit-comparison tr{display:grid;gap:8px;background:#fff;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:8px;padding:10px 11px}
+  .kit-comparison td,.kit-comparison th{display:block;padding:0;border:0;min-width:0;overflow-wrap:anywhere}
+  .kit-comparison tbody th{font-size:1rem;white-space:normal;background:none}.kit-comparison tbody th small{display:block;color:var(--muted);font-weight:400}
+  .kit-label{display:block;font-size:.79rem;font-weight:650;color:var(--muted);margin-bottom:2px}
+  .kit-comparison td:last-child{padding:8px 9px;background:var(--pale);border-radius:5px}
+  .basket-people,.basket-brands{grid-template-columns:1fr;gap:8px}.basket-panel{padding:10px 11px}
+  .basket-panel dl div{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline}.basket-panel dd{text-align:right}.basket-line{align-items:center}
+  .remove-pick,.basket-head>a{min-height:44px;min-width:44px;display:inline-grid;place-items:center;padding:5px 7px}
+  #basket-total{font-weight:700;line-height:1.45;margin-top:10px}
+  .product-bar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.person{min-width:0;min-height:54px;padding:7px 9px}
+  .filters{gap:8px}.filter-query{grid-column:1/-1}.filters select,.filters input[type=search]{font-size:16px;min-height:44px}
+  .filters .switch{min-height:42px}.filters .switch input{width:18px;height:18px;margin:0}
+  .item{min-width:0;grid-template-columns:83px minmax(0,1fr);gap:8px;padding:8px}.item .meta,.item .price-line{overflow-wrap:anywhere}
+  .item .buy,.pick{display:flex;align-items:center;min-height:44px;margin-top:1px}.pick{width:fit-content}.pick input{width:20px;height:20px}
+  .preview{width:calc(100% - 16px);max-height:calc(100dvh - 16px - env(safe-area-inset-bottom))}.preview-inner{padding:9px}
+  .preview-close{position:sticky;top:0;z-index:1;min-height:44px;margin-left:auto;box-shadow:0 2px 8px #1c252124}
+  .preview-visual img{height:clamp(145px,44dvh,480px)}.preview .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:7px}
+  .preview .links a{display:grid;place-items:center;text-align:center;min-height:44px;padding:4px 5px;border:1px solid var(--border);border-radius:5px}
+  .shiptable{table-layout:fixed}.shiptable th,.shiptable td{min-width:0;padding:6px 4px;font-size:.76rem;white-space:normal;overflow-wrap:anywhere}.shiptable .ship-yuan{display:block}
+}
+@media(max-width:360px){.filters{grid-template-columns:1fr}.basket-panel dl div{grid-template-columns:1fr;gap:1px}.basket-panel dd{text-align:left}}
 </style>
 </head>
 <body><main>
@@ -49,10 +78,10 @@
 <div class="note"><h3>Rapha 首单 85 折 · Core 套装 8 折</h3><p>官网订阅邮件有首单减 <strong>15%</strong>。两件符合条件的正价服饰同买减 <strong>15%</strong>，Core 指定搭配减 <strong>20%</strong>。正价 Core 男款套装 A$280。折扣款按标价比，首单券不计入下方黑五价格。</p><div class="sources"><a href="https://www.rapha.cc/au/en/shop/bundles">首单和套装规则</a><a href="https://www.rapha.cc/ap/en/help/order-queries">折扣码适用范围</a></div></div>
 <div class="note"><h3>MAAP 套装 85 折 · 暂无可核实的首单 9 折</h3><p>官方 Kit Bundle 使用指定搭配减 <strong>15%</strong>。官方黑五条款明确按标价，优惠码、Strava 券和套装折扣都不叠加。没有查到 MAAP 澳洲官方通用新人 10% 活动。</p><div class="sources"><a href="https://maap.cc/bundles">官方套装</a><a href="https://support.maap.cc/hc/en-us/articles/10607423148045-MAAP-Black-Friday-Sale-Terms-and-Conditions">黑五条款</a></div></div>
 </div>
-<div class="table-wrap"><table aria-label="两人四件澳洲购买组合"><thead><tr><th>两人怎么配</th><th>男生 A · 上衣 L／裤 M</th><th>男生 B · 上衣 M／裤 M</th><th>送到澳洲地址</th></tr></thead><tbody>
-<tr><td><strong>都买 Rapha</strong><br>一条吊带、一条无吊带</td><td><a href="https://www.rapha.cc/au/en/product/mens-core-jersey/COR05XXLMW">Core 短袖 A$90</a> + <a href="https://www.rapha.cc/au/en/product/mens-core-bib-shorts/DAA01XXCWT">Core 吊带 A$140</a></td><td><a href="https://www.rapha.cc/au/en/product/mens-brevet-element-jersey/BUP01XXMGE">Brevet Element A$99</a> + <a href="https://www.rapha.cc/au/en/product/mens-core-shorts/CZY01XXHUW">Core 无吊带 A$114</a></td><td><strong>A$443 ≈ ¥1,971</strong><br>合单免运，比分开下单省 A$40</td></tr>
-<tr><td><strong>两人都要吊带</strong><br>Rapha + MAAP</td><td>同上，Rapha 两件 A$230</td><td><a href="https://maap.cc/products/greenedge-26-pro-air-jersey-3-0-electric-purple">GreenEDGE Pro Air A$135</a> + <a href="https://maap.cc/products/training-bib-3-0-iris">Training Bib A$175</a></td><td><strong>A$560 ≈ ¥2,492</strong><br>Rapha 运 A$20，MAAP 免运</td></tr>
-<tr><td><strong>都买 MAAP</strong><br>同款 M 吊带可买两条</td><td><a href="https://maap.cc/products/greenedge-26-pro-air-jersey-3-0-electric-purple">GreenEDGE Pro Air A$135</a> + <a href="https://maap.cc/products/training-bib-3-0-iris">Training Bib A$175</a></td><td><a href="https://maap.cc/products/worldtour-26-pro-air-jersey-3-0-electric-purple">WorldTour Pro Air A$135</a> + <a href="https://maap.cc/products/training-bib-3-0-iris">Training Bib A$175</a></td><td><strong>A$620 ≈ ¥2,759</strong><br>澳洲境内免运</td></tr>
+<div class="table-wrap"><table class="kit-comparison" role="table" aria-label="两人四件澳洲购买组合"><thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">两人怎么配</th><th scope="col" role="columnheader">男生 A · 上衣 L／裤 M</th><th scope="col" role="columnheader">男生 B · 上衣 M／裤 M</th><th scope="col" role="columnheader">送到澳洲地址</th></tr></thead><tbody role="rowgroup">
+<tr role="row"><th scope="row" role="rowheader"><strong>都买 Rapha</strong><small>一条吊带、一条无吊带</small></th><td role="cell"><span class="kit-label" aria-hidden="true">男生 A · 上衣 L／裤 M</span><a href="https://www.rapha.cc/au/en/product/mens-core-jersey/COR05XXLMW">Core 短袖 A$90</a> + <a href="https://www.rapha.cc/au/en/product/mens-core-bib-shorts/DAA01XXCWT">Core 吊带 A$140</a></td><td role="cell"><span class="kit-label" aria-hidden="true">男生 B · 上衣 M／裤 M</span><a href="https://www.rapha.cc/au/en/product/mens-brevet-element-jersey/BUP01XXMGE">Brevet Element A$99</a> + <a href="https://www.rapha.cc/au/en/product/mens-core-shorts/CZY01XXHUW">Core 无吊带 A$114</a></td><td role="cell"><span class="kit-label" aria-hidden="true">送到澳洲地址</span><strong>A$443 ≈ ¥1,971</strong><br>合单免运，比分开下单省 A$40</td></tr>
+<tr role="row"><th scope="row" role="rowheader"><strong>两人都要吊带</strong><small>Rapha + MAAP</small></th><td role="cell"><span class="kit-label" aria-hidden="true">男生 A · 上衣 L／裤 M</span>同上，Rapha 两件 A$230</td><td role="cell"><span class="kit-label" aria-hidden="true">男生 B · 上衣 M／裤 M</span><a href="https://maap.cc/products/greenedge-26-pro-air-jersey-3-0-electric-purple">GreenEDGE Pro Air A$135</a> + <a href="https://maap.cc/products/training-bib-3-0-iris">Training Bib A$175</a></td><td role="cell"><span class="kit-label" aria-hidden="true">送到澳洲地址</span><strong>A$560 ≈ ¥2,492</strong><br>Rapha 运 A$20，MAAP 免运</td></tr>
+<tr role="row"><th scope="row" role="rowheader"><strong>都买 MAAP</strong><small>同款 M 吊带可买两条</small></th><td role="cell"><span class="kit-label" aria-hidden="true">男生 A · 上衣 L／裤 M</span><a href="https://maap.cc/products/greenedge-26-pro-air-jersey-3-0-electric-purple">GreenEDGE Pro Air A$135</a> + <a href="https://maap.cc/products/training-bib-3-0-iris">Training Bib A$175</a></td><td role="cell"><span class="kit-label" aria-hidden="true">男生 B · 上衣 M／裤 M</span><a href="https://maap.cc/products/worldtour-26-pro-air-jersey-3-0-electric-purple">WorldTour Pro Air A$135</a> + <a href="https://maap.cc/products/training-bib-3-0-iris">Training Bib A$175</a></td><td role="cell"><span class="kit-label" aria-hidden="true">送到澳洲地址</span><strong>A$620 ≈ ¥2,759</strong><br>澳洲境内免运</td></tr>
 </tbody></table></div>
 <p class="tip">金额已计澳洲境内运费。朋友从澳洲寄杭州的邮费、可能的进口税另算。澳洲不同品牌各自计算免运门槛。Rapha 上表两条裤均显示库存少。</p>
 </section>
@@ -74,7 +103,7 @@
 <label>品牌<select id="brand"><option value="">全部品牌</option><option>Rapha</option><option>MAAP</option></select></label>
 <label>购买地区<select id="region"><option value="">全部 · 澳洲优先</option><option value="au">澳洲代买</option><option value="tw">台湾价格参考</option></select></label>
 <label>品类<select id="category"><option value="">全部公路骑行装备</option><option value="top">全部骑行上衣</option><option value="bottom">全部骑行裤</option><option>车衣</option><option>骑行外套</option><option>骑行背心</option><option>打底衫</option><option>吊带骑行裤</option><option>骑行裤</option><option>公路骑行长裤</option></select></label>
-<label>搜索款式或配色<input id="query" type="search" placeholder="Core、Team Bib、黑色…" autocomplete="off"></label>
+<label class="filter-query">搜索款式或配色<input id="query" type="search" placeholder="Core、Team Bib、黑色…" autocomplete="off"></label>
 <label class="switch"><input id="members" type="checkbox">包含 RCC 会员专属款</label>
 </form>
 <p id="counts" aria-live="polite"></p>
@@ -91,7 +120,7 @@
 </div>
 <h3 style="margin-top:16px">澳洲朋友寄杭州 · Australia Post</h3>
 <p>从澳洲交寄普通服饰，选择中国大陆，按实重计费并填写实际货值。标准约 4–9 个工作日，Express 约 3–6 个工作日，清关可能额外占时。以下为 2026 年 7 月起官方现行零售邮费，自备包装。</p>
-<div class="table-wrap"><table class="shiptable" aria-label="澳洲寄杭州邮费重量表"><thead><tr><th>包裹重量</th><th>Standard</th><th>Express</th></tr></thead><tbody><tr><td>≤ 250 g</td><td>A$20.60 ≈ ¥92</td><td>A$37.60 ≈ ¥167</td></tr><tr><td>251–500 g</td><td>A$26.85 ≈ ¥119</td><td>A$43.85 ≈ ¥195</td></tr><tr><td>501 g–1 kg</td><td>A$39.40 ≈ ¥175</td><td>A$56.40 ≈ ¥251</td></tr><tr><td>1–1.5 kg</td><td>A$51.95 ≈ ¥231</td><td>A$68.95 ≈ ¥307</td></tr><tr><td>1.5–2 kg</td><td>A$64.50 ≈ ¥287</td><td>A$81.50 ≈ ¥363</td></tr></tbody></table></div>
+<div class="table-wrap"><table class="shiptable" aria-label="澳洲寄杭州邮费重量表"><thead><tr><th>包裹重量</th><th>Standard</th><th>Express</th></tr></thead><tbody><tr><td>≤ 250 g</td><td>A$20.60 <span class="ship-yuan">≈ ¥92</span></td><td>A$37.60 <span class="ship-yuan">≈ ¥167</span></td></tr><tr><td>251–500 g</td><td>A$26.85 <span class="ship-yuan">≈ ¥119</span></td><td>A$43.85 <span class="ship-yuan">≈ ¥195</span></td></tr><tr><td>501 g–1 kg</td><td>A$39.40 <span class="ship-yuan">≈ ¥175</span></td><td>A$56.40 <span class="ship-yuan">≈ ¥251</span></td></tr><tr><td>1–1.5 kg</td><td>A$51.95 <span class="ship-yuan">≈ ¥231</span></td><td>A$68.95 <span class="ship-yuan">≈ ¥307</span></td></tr><tr><td>1.5–2 kg</td><td>A$64.50 <span class="ship-yuan">≈ ¥287</span></td><td>A$81.50 <span class="ship-yuan">≈ ¥363</span></td></tr></tbody></table></div>
 <p class="tip"><strong>预算示例</strong> · MAAP GreenEDGE A$135 + Training Bib A$175，澳洲内免运。若打包不超过 500 g、走 Standard，并按商品价约 ¥1,380 和服装 20% 估算进口税，单套到手约 <strong>¥1,775</strong>。若实重超过 500 g、在 1 kg 以内，约 <strong>¥1,831</strong>。以邮局称重、海关计税和实际汇率为准。</p>
 <p class="tip">重要：寄中国大陆的个人邮包每次限值 ¥2,000。先把商品货值和所选线路的限值对照，海关按实际申报和核定货值处理。例如 MAAP 四件示例货值约 ¥2,759，不用普通个人邮包整箱计算。服装综合税率一般 20%，应征税额 ≤¥50 时免征。杭州拱墅区可用 310011 作区级查询参考，具体邮编按街道核对。</p>
 <div class="sources"><a href="https://auspost.com.au/disruptions-and-updates/pricing-updates/apr-pricing-update-2026">Australia Post 费率</a><a href="https://auspost.com.au/personal/sending/parcels/sending-internationally/zones">中国邮寄分区</a><a href="https://auspost.com.au/personal/sending/delivery-speeds-and-coverage/international-delivery-times">时效</a><a href="https://online.customs.gov.cn/ociswebserver/pages/jcjybcx/question.html">中国海关</a><a href="https://www.amap.com/ssr/zipcode/zhejiang-hangzhou-gongshu">拱墅区邮编</a></div>
