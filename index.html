@@ -36,6 +36,7 @@
 .basket-panel dl{margin:6px 0}.basket-panel dl div{display:flex;justify-content:space-between;gap:6px 12px;padding:3px 0;flex-wrap:wrap}.basket-panel dt{font-size:.86rem}.basket-panel dd{margin:0;color:var(--accent);font-weight:690;overflow-wrap:anywhere}.basket-panel small{font-size:.77rem;color:var(--muted);font-weight:420}
 .pick{display:flex;align-items:center;gap:7px;color:var(--accent);font-size:.87rem;font-weight:650;cursor:pointer;margin:7px 0 0}.pick input{accent-color:var(--accent);width:17px;height:17px;margin:0;flex:none}.pick[hidden]{display:none}
 .price-line{display:block}.price-label,.price-original{font-size:.79rem;color:var(--muted)}.price-label{margin-right:5px}.price-original{display:block;margin-top:1px}
+.flagship-price{margin:7px 0 2px;padding:5px 8px;border-left:2px solid var(--accent);background:var(--pale);font-size:.82rem;line-height:1.5;overflow-wrap:anywhere}.flagship-price a{color:var(--accent);text-underline-offset:2px}.flagship-price strong{white-space:nowrap}.flagship-price span{display:block;color:var(--muted)}
 .kit-label{display:none}.kit-comparison tbody th{background:none;white-space:normal}.kit-comparison tbody th small{display:block;color:var(--muted);font-weight:400}
 @media(max-width:740px){.item{grid-template-columns:78px minmax(0,1fr)}.preview-inner{display:flex;flex-direction:column;gap:10px;padding:11px}.preview-visual,.preview-details{width:100%}.preview-visual img{height:min(47dvh,540px)}.preview-details{display:contents}.preview-close{order:-1;margin-bottom:0}.preview h2{margin:0}.preview .links{margin-top:0}.color-list{width:100%}}
 @media(max-width:640px){
@@ -97,7 +98,7 @@
 
 <section id="stock" class="block">
 <h2>按人看公路骑行现货</h2>
-<p class="tip" style="margin:0 0 10px">点商品图看同地区、同尺码的现货配色。商品卡上的人民币是官网折后价换算，官网原价另列。目前没有核实到淘宝旗舰店同款价格。</p>
+<p class="tip" style="margin:0 0 10px">点商品图看同地区、同尺码的现货配色。海外官网折后价和原价分别列出。国内天猫价格只标在已核对同款、同色、同码的商品上。券后价为 11 月 20 日页面显示的人民币参考价，优惠以结算页为准。</p>
 <div class="product-bar" role="group" aria-label="选择购物人"><button class="person" type="button" data-person="A" aria-pressed="true"><strong>男生 A</strong><span>上衣 L · 裤子 M</span></button><button class="person" type="button" data-person="B" aria-pressed="false"><strong>男生 B</strong><span>上衣 M · 裤子 M</span></button></div>
 <form id="filters" class="filters">
 <label>品牌<select id="brand"><option value="">全部品牌</option><option>Rapha</option><option>MAAP</option></select></label>
@@ -126,7 +127,7 @@
 <div class="sources"><a href="https://auspost.com.au/disruptions-and-updates/pricing-updates/apr-pricing-update-2026">Australia Post 费率</a><a href="https://auspost.com.au/personal/sending/parcels/sending-internationally/zones">中国邮寄分区</a><a href="https://auspost.com.au/personal/sending/delivery-speeds-and-coverage/international-delivery-times">时效</a><a href="https://online.customs.gov.cn/ociswebserver/pages/jcjybcx/question.html">中国海关</a><a href="https://www.amap.com/ssr/zipcode/zhejiang-hangzhou-gongshu">拱墅区邮编</a></div>
 <div class="route-grid" style="margin-top:12px">
 <div class="note"><h3>台湾转寄 · 有台湾收件人时再用</h3><p>先由台湾收件人收妥，再用中华邮政两岸快捷空运发杭州。0.5 kg <strong>NT$388 ≈ ¥78</strong>，1 kg <strong>NT$435 ≈ ¥88</strong>，2 kg <strong>NT$529 ≈ ¥107</strong>。另加首段台湾运费及适用税费。Rapha 台湾站首段 NT$500、总价 NT$10,000 起免运；MAAP 公开的台北费率同为 NT$500、NT$10,000 起免运，其他台湾邮编以下单页为准。</p><div class="sources"><a href="https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=2010404">台湾寄杭州邮费</a><a href="https://support.maap.cc/hc/en-us/articles/4999469817613-Shipping-Information-all-countries-outside-Australia-NZ-USA-UK-and-the-EU">MAAP 直送范围</a></div></div>
-<div class="note"><h3>中国大陆官方渠道 · 直接寄杭州</h3><p>天猫搜索 Rapha 官方旗舰店、MAAP 官方旗舰店，选择杭州收货查看国内运费、活动券和库存。两家大陆官方线下渠道也可核实。大陆平台店铺的成交券和尺码未能核对，暂不作为本页现货报价。</p><div class="sources"><a href="https://content.rapha.cc/ap/en/clubhouses/shanghai">Rapha 上海</a><a href="https://maap.cc/sg/lab-shanghai">MAAP 上海</a><a href="https://s.taobao.com/search?q=Rapha%20%E5%AE%98%E6%96%B9%E6%97%97%E8%88%B0%E5%BA%97">搜索 Rapha 官方旗舰店</a><a href="https://s.taobao.com/search?q=MAAP%20%E5%AE%98%E6%96%B9%E6%97%97%E8%88%B0%E5%BA%97">搜索 MAAP 官方旗舰店</a></div></div>
+<div class="note"><h3>中国大陆官方渠道 · 直接寄杭州</h3><p>商品卡的「国内天猫旗舰店」可打开对应商品和尺码。选择杭州收货后，结算页会显示适用优惠、运费和库存。</p><div class="sources"><a href="https://rapha.tmall.com/">Rapha 天猫官方旗舰店</a><a href="https://content.rapha.cc/ap/en/clubhouses/shanghai">Rapha 上海</a><a href="https://maap.cc/sg/lab-shanghai">MAAP 上海</a><a href="https://s.taobao.com/search?q=MAAP%20%E5%AE%98%E6%96%B9%E6%97%97%E8%88%B0%E5%BA%97">搜索 MAAP 官方旗舰店</a></div></div>
 </div>
 </section>
 <footer>
@@ -142,6 +143,7 @@
       <h2 id="preview-title"></h2>
       <p id="preview-meta" class="meta"></p>
       <p id="preview-selection" aria-live="polite"></p>
+      <div id="preview-flagship" aria-live="polite"></div>
       <label id="preview-pick-row" class="pick" hidden><input id="preview-pick" type="checkbox"><span id="preview-pick-text"></span></label>
       <p id="preview-colors-label" class="tip"></p>
       <div id="preview-colors" class="color-list" role="group" aria-labelledby="preview-colors-label"></div>
@@ -171,6 +173,18 @@ const brandOrders = {
 };
 const storageKey = 'cycling-road-shopping-v1';
 const itemKey = item => `${item.brand}/${item.sku}`;
+const flagshipPrices = {
+  'Rapha/COR05XXLMW': {L:{id:'785272433721',skuId:'6206515838074',price:542,before:920}},
+  'Rapha/COR05XXTBW': {
+    M:{id:'785272433721',skuId:'6198146479490',price:920},
+    L:{id:'785272433721',skuId:'6198146479491',price:920}
+  },
+  'Rapha/BFM01XXFOB': {
+    M:{id:'1006618601053',skuId:'6042720972376',price:700},
+    L:{id:'1006618601053',skuId:'6042720972377',price:700}
+  },
+  'Rapha/BFM01XXCRT': {M:{id:'1006618601053',skuId:'6213490534386',price:700}}
+};
 const australianStock = new Map(inventory.filter(item => item.region === 'au' && item.currency === 'AUD').map(item => [itemKey(item),item]));
 const picked = {A:new Set(),B:new Set()};
 let current = 'A';
@@ -183,6 +197,20 @@ function element(tag, value, className) {
   if (value) node.textContent = value;
   if (className) node.className = className;
   return node;
+}
+
+function flagshipPrice(item,size) {
+  const quote = flagshipPrices[itemKey(item)]?.[size];
+  if (!quote) return null;
+  const row = element('div','','flagship-price');
+  const link = element('a',`国内天猫旗舰店${quote.before ? '券后参考' : '标价'} `);
+  link.href = `https://detail.tmall.com/item.htm?id=${quote.id}&skuId=${quote.skuId}`;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.append(element('strong',`¥${amount(quote.price)}`));
+  row.append(link);
+  if (quote.before) row.append(element('span',`天猫优惠前 ¥${amount(quote.before)}`));
+  return row;
 }
 
 function eligible(item,buyer) {
@@ -347,6 +375,8 @@ function showColor(index, size) {
   const state = item.sizes[size] === 'lowStock' ? '库存少' : '有货';
   const currency = item.currency === 'AUD' ? 'A$' : 'NT$';
   field('preview-selection').textContent = [item.color || '当前配色',`官网折后 ${showYuan(item.price * rates[item.currency])}（${currency}${amount(item.price)}）`,`官网原价 ${currency}${amount(item.was)}`,state].join(' · ');
+  const comparison = flagshipPrice(item,size);
+  field('preview-flagship').replaceChildren(...(comparison ? [comparison] : []));
   const marking = field('preview-pick');
   const buyer = preview.dataset.buyer;
   field('preview-pick-row').hidden = item.region !== 'au';
@@ -427,6 +457,8 @@ function card(item, size) {
   const originalPrice = element('span','官网原价 ','price-original');
   originalPrice.append(element('del',originalCurrency+amount(item.was)));
   cost.append(priceLine,originalPrice);
+  const comparison = flagshipPrice(item,size);
+  if (comparison) cost.append(comparison);
   const buy = element('a','查看该配色','buy');
   buy.href = productUrl(item,size);
   buy.target = '_blank';
